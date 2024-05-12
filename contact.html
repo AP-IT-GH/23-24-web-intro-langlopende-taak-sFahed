@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl-BE">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,14 +27,20 @@
                 <div class="navbar-nav">
                     <a href="index.html" target="_self" class="nav-item nav-link active">Home</a>
                     <a href="service-general.html" target="_self" class="nav-item nav-link">Diensten</a>
-                    <a href="about-us.html" target="_self" class="nav-item nav-link">Over Onze</a>
+                    <a href="about-us.html" target="_self" class="nav-item nav-link">Over Ons</a>
                     <a href="contact.html" target="_self" class="nav-item nav-link">Contact</a>
-                    <a href="#" class="nav-item nav-link">Dashboard</a>
+                    <a href="dashboard.html" class="nav-item nav-link">Dashboard</a>
+                    <form class="form-inline my-2 my-lg-0 float-right">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> 
+                      </form>
                 </div>
               
             </div>
         </div>
 </nav>
+
+
+<main>
 
 <div class="container ">
    
@@ -42,7 +48,12 @@
         <hr>
         <div class="row">
             <div class="col-md-6">
-                <h2>Admin:</h2>
+                <h3>Met wie wilt u contact opnemen</h3>
+                <select class="form-select" >
+                    <option>Kies voor...</option>
+                    <option>Admin</option>
+                    <option>Web Designer</option> 
+                  </select> 
                 <form action="#" method="#"> <!-- action and method are optional in this case-->
                     <div class="form-group">
                         <label for="admin_name">Naam</label>
@@ -56,32 +67,14 @@
                         <label for="admin_message">Bericht</label>
                         <textarea class="form-control" id="admin_message" name="admin_message" rows="4"></textarea>
                     </div>
-                    <hr>
+                    
                     <button type="submit" class="btn btn-outline-success">Versturen</button>
                 </form>
             </div>
-            <div class="col-md-6">
-                <h2> Web designer:</h2>
-                <form action="#" method="#"><!-- action and method are optional in this case-->
-                    <div class="form-group">
-                        <label for="webdesigner_name">Naam</label>
-                        <input type="text" class="form-control" id="webdesigner_name" name="webdesigner_name">
-                    </div>
-                    <div class="form-group">
-                        <label for="webdesigner_email">E-mail</label>
-                        <input type="email" class="form-control" id="webdesigner_email" name="webdesigner_email">
-                    </div>
-                    <div class="form-group">
-                        <label for="webdesigner_message">Bericht</label>
-                        <textarea class="form-control" id="webdesigner_message" name="webdesigner_message" rows="4"></textarea>
-                    </div>
-                    <hr>
-                    <button type="submit" class="btn btn-outline-success">Versturen</button>
-                </form>
-            </div>
+            
         </div>
-
-        <div class="row mt-5"> <!-- added mt-5 -->
+<hr> <!-- horizontal line -->
+        <div class="row mt-4"> <!-- added mt-5 -->
             <div class="col">
                 <h2>Locatie</h2>
                 <!-- add map -->
@@ -93,11 +86,16 @@
         <footer>
             <div class="row">
                 <div class="col-md-6">
-                    <p>Copyright © 2024 Salah Fahed</p>
+                    <p>Copyright © 2024 Salah Fahed Groep: G_SNB_A1</p>
                 </div>
             </div>
         </footer>
 </div>
+</main>
+
+<aside class="container">
+    <!-- Content for aside section can be added here -->
+</aside>
 
     <!--  Bootstrap amd jQuery scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
